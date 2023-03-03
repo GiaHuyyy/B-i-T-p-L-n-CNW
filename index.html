@@ -8,29 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="container_nav">
-                <a href="./index.html" class="logo_snapx">
-                    <img src="./assets/img/logo.png" alt="logo">
-                </a>
-                <ul class="container_list">
-                    <li class="container_list_item">HOME</li>
-                    <li class="container_list_item">
-                        PHOTOS & VIDEO
-                        <ul class="has_menu">
-                            <li>CONTESTS</li>
-                            <li>SINGLE CONTESTS</li>
-                        </ul>
-                    </li>
-                    <li class="container_list_item">CATEORIES</li>
-                    <li class="container_list_item">USERS</li>
-                </ul>
+    <div class="web">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="container_nav">
+                    <a href="./index.html" class="logo_snapx">
+                        <img src="./assets/img/logo.png" alt="logo">
+                    </a>
+                    <ul class="container_list">
+                        <li class="container_list-item">
+                            <a href="" class="container_list-item-link">HOME</a>
+                        </li>
+                        <li class="container_list-item">
+                            <a href="" class="container_list-item-link">PHOTOS & VIDEOS</a>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <ul class="has_menu">
+                                <li><a href="">CONTESTS</a> </li>
+                                <li><a href="">SINGLE CONTESTS</a></li>
+                            </ul>
+                        </li>
+                        <li class="container_list-item">
+                            <a href="" class="container_list-item-link">CATEGORIES</a>
+                        </li>
+                        <li class="container_list-item">
+                            <a href="" class="container_list-item-link">USERS</a>
+                        </li>
+                    </ul>
+                    <div class="sign_in_up_button">
+                        <a href="" class="sign_in_up_button_link">
+                            <i class="fa-solid fa-user"></i>
+                            Sign In/Up
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
+
+        <!--Banner  -->
+        <div class="banner"></div>
+    </div>
 </body>
 </html>

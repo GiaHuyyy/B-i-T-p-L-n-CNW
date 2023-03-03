@@ -8,12 +8,112 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.web {
+    height: 3000px;
+}
+
 .header {
     min-height: 70px;
-    background-color: #ccc;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 114px;
+}
+
+.container_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_list {
+    display: flex;
+}
+
+.has_menu {
+    display: none;
 }
 
 .logo_snapx {
+    max-width: 142px;
+    margin-top: 5px;
+}
 
+.logo_snapx img {
+    width: 100%;
+}
+
+.container_list {
+    list-style: none;
+}
+
+.container_list-item {
+    padding: 25.4px 30px;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.container_list-item i {
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    bottom: 1px;
+}
+
+.container_list-item:first-child {
+    padding-left: 60px;
+}
+
+.container_list-item:last-child {
+    padding-right: 60px;
+}
+
+.container_list-item:nth-child(2) {
+    padding-right: 5px;
+}
+
+.container_list-item-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.sign_in_up_button {
+
+}
+
+.sign_in_up_button a{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    transition: ease 0.3s;
+}
+
+.sign_in_up_button a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Banner */
+.banner {
+    min-height: 926px;
+    background-image: url(https://templatemo.com/templates/templatemo_576_snapx_photography/assets/images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 290px;
+    padding-bottom: 240px;
+    text-align: center;
+    background-color: #2a2a2a;
 }
 
