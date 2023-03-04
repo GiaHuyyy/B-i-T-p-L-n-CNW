@@ -6,6 +6,11 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    /* Tối ưu tốc độ hiển thị hình ảnh */
+    text-rendering: optimizeSpeed; 
+    /* Tối ưu font chữ, khử răng cưa, tránh vỡ chữ */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .web {
