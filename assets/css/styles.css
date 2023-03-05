@@ -26,7 +26,7 @@ body {
 
 .container {
     max-width: 1320px;
-    margin: 0 114px;
+    margin: 0 112px;
 }
 
 .container_nav {
@@ -37,10 +37,6 @@ body {
 
 .container_list {
     display: flex;
-}
-
-.has_menu {
-    display: none;
 }
 
 .logo_snapx {
@@ -54,19 +50,20 @@ body {
 
 .container_list {
     list-style: none;
+    margin-left: 14px;
 }
 
 .container_list-item {
-    padding: 25.4px 30px;
+    padding: 0px 30px;
     background-color: var(--primary-color);
-    overflow: hidden;
+    position: relative;
 }
 
 .container_list-item i {
     font-size: 12px;
     color: #fff;
     position: relative;
-    bottom: 1px;
+    bottom: 2px;
 }
 
 .container_list-item:first-child {
@@ -78,18 +75,60 @@ body {
 }
 
 .container_list-item:nth-child(2) {
-    padding-right: 5px;
+    padding-right: 2px;
 }
 
 .container_list-item-link {
     text-decoration: none;
     font-size: 14px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
     color: #fff;
     letter-spacing: 1px;
 }
 
-.sign_in_up_button {
+.sub_menu {
+    position: absolute;
+    list-style: none;
+    top: 70px; 
+    width: 90%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(40%);
+    transition: all ease 0.3s;
+    z-index: -3;
+}
 
+.container_list-item:hover .sub_menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sub_menu a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 100;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    background-color: #f7f7f7;
+    color: #2a2a2a;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #eee;
+    transition: all ease 0.3s;
+}
+
+.sub_menu a:hover {
+    padding-left: 25px;
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+.sign_in_up_button {
+    
 }
 
 .sign_in_up_button a{
