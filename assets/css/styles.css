@@ -14,7 +14,7 @@ body {
 }
 
 .web {
-    height: 3000px;
+    
 }
 
 .header {
@@ -631,4 +631,32 @@ body {
 .Contest_plans-pricing-button a:hover {
     color: #fff;
     background-color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    margin-top: 120px;
+    padding: 25px 0px;
+    background-color: var(--primary-color);
+}
+
+.footer_item {
+    text-align: center;
+}
+
+.footer_item p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #fff;
+}
+
+.footer_item a {
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_item a:hover {
+    color: #0a58ca;
 }
