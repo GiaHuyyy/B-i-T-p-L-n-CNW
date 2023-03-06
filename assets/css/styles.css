@@ -22,6 +22,9 @@ body {
     width: 100%;
     background-color: #fff;
     position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
 }
 
 .container {
@@ -229,6 +232,74 @@ body {
 .header_text-button-watch i{
     padding-right: 5px;
     font-size: 16px;
+}
+
+/* Featured items */
+.featured {
+    width: 100%;
+}
+
+.featured_list {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    top: -150px;
+}
+
+.featured_list-pictures {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured_list-pictures-item {
+    width: 412px;
+}
+
+.featured_list-pictures-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.featured_list-buttons {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-25px);
+}
+
+.featured_button-prev, 
+.featured_button-next {
+    border: none;
+    background: none;
+    position: absolute;
+}
+
+.featured_button-prev {
+    left: -70px;
+}
+
+.featured_button-next {
+    right: -70px;
+}
+
+.featured_button-prev i, 
+.featured_button-next i {
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+    line-height: 46px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--primary-color);
+    font-size: 13px;
+    opacity: 0.75;
+    transition: ease 0.3s;
+}
+
+.featured_button-prev i:hover,
+.featured_button-next i:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 
