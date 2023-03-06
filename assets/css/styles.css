@@ -424,7 +424,7 @@ body {
 .categories_content {
     display: flex;
     justify-content: space-between;
-    margin-top: 90px;
+    margin-top: 80px;
 }
 
 .categories_content-item {
@@ -440,14 +440,18 @@ body {
 }
 
 .icon_topic {
-    width: 65px;
-    height: 72px;
+    width: 68px;
+    height: 75px;
     line-height: 100px;
     background-color: #f7f7f7;
     text-align: center;
     border-radius: 10px;
     margin-right: 20px;
-    /* display: inline-block; */
+    display: inline-block;
+}
+/* Deafult height last child*/
+.deafult_height {
+    line-height: 80px;
 }
 
 .icon_topic img {
@@ -513,6 +517,8 @@ body {
     color: #fff;
     background-color: var(--primary-color);
 }
+
+/* Contest Plans And Price Awards */
 
 
 
