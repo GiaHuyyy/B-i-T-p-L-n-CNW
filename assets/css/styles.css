@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     /* Tối ưu tốc độ hiển thị hình ảnh */
     text-rendering: optimizeSpeed;
     /* Tối ưu font chữ, khử răng cưa, tránh vỡ chữ */
@@ -14,7 +14,6 @@ body {
 }
 
 .web {
-    
 }
 
 .header {
@@ -131,7 +130,8 @@ body {
     background-color: #fff;
 }
 
-.sign_in_up_button {}
+.sign_in_up_button {
+}
 
 .sign_in_up_button a {
     font-size: 15px;
@@ -242,22 +242,35 @@ body {
     top: -150px;
 }
 
-.featured_list {}
+.featured_list {
+}
 
 .featured_list-pictures {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
+    overflow: hidden;
 }
 
 .featured_list-pictures-item {
-    width: 412px;
     position: relative;
+    width: calc(33.3333% - 20px);
+    flex-shrink: 0;
     border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    /* transform: translateX(0); */
+    transition: all ease 0.5s;
+}
+
+.featured_list-pictures-item.active {
+    transform: translateX(calc(-100% - 30px));
 }
 
 .featured_list-pictures-img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 15px;
 }
 
@@ -303,7 +316,7 @@ body {
     cursor: pointer;
 }
 
-/* Faeture list hover */
+/* Feature list hover */
 .featured_list-hover {
     position: absolute;
     top: 0;
@@ -313,16 +326,16 @@ body {
     border-radius: 10px;
     text-align: center;
     background-color: rgba(250, 250, 250, 0.92);
-    opacity: 0;
-    visibility: hidden;
     transform: translateY(100%);
     transition: ease 0.3s;
+    /* opacity: 0;
+    visibility: hidden; */
 }
 
 .featured_list-pictures-item:hover .featured_list-hover {
     transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
+    /* opacity: 1;
+    visibility: visible; */
 }
 
 .featured_list-hover-content {
@@ -482,12 +495,42 @@ body {
 }
 
 .categories_content-picture {
+    position: relative;
     width: 262px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .categories_content-picture img {
     border-radius: 15px;
     width: 100%;
+}
+
+.categories_content-picture .category,
+.categories_content-picture .likes {
+    position: absolute;
+    padding: 8px 12px;
+    font-size: 15px;
+    color: #00bdfe;
+    background-color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all ease 0.3s;
+}
+
+.categories_content-picture .category {
+    left: 15px;
+    top: -60px;
+}
+
+.categories_content-picture .likes {
+    right: 15px;
+    top: -60px;
+}
+
+.categories_content-picture:hover .category,
+.categories_content-picture:hover .likes {
+    top: 16px;
 }
 
 .categories_content-button {
