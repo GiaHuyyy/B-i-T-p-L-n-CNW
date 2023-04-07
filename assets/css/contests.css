@@ -1,0 +1,9 @@
+.web {
+}
+
+/* Banner */
+.banner {
+    background-image: url(/assets/img/contests-bg.jpg);
+    padding-top: 200px;
+    padding-bottom: 130px;
+}
