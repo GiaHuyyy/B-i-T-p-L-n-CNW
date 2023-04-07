@@ -17,6 +17,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* common */
+.main-content {
+    width: 1294px;
+    max-width: calc(100 - 24px);
+    margin: 0 auto;
+}
+
+
+
 /* Header */
 .header {
     max-height: 70px;
