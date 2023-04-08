@@ -23,11 +23,11 @@
 
 .search-form .search-form-body-item {
     position: relative;
-    margin: 0 12px;
+    padding: 0 12px;
 }
 
 .search-form .search-form-body-item:first-child {
-    margin-left: 0;
+    padding-left: 0;
 }
 
 fieldset {
@@ -73,8 +73,9 @@ fieldset {
 
 .search-form i {
     position: absolute;
-    right: 12px;
+    right: 24px;
     bottom: 14px;
+    font-size: 13px;
 }
 
 .search-form .item-btn {
@@ -87,8 +88,8 @@ fieldset {
     padding: 13px 30px;
     border-radius: 10px;
     letter-spacing: 0.5px;
-    font-weight: 500;
-    transition: all 0.3s ease 0s;
+    font-weight: 550;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
@@ -96,3 +97,6 @@ fieldset {
     background: #fff;
     color: var(--primary-color);
 }
+
+/* Our Featured  */
+
