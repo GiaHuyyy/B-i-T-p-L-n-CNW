@@ -99,4 +99,142 @@ fieldset {
 }
 
 /* Our Featured  */
+.featured-container {
+    margin-top: 120px;
+}
 
+.featured-heading {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.featured-heading h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.featured-heading h2 {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Main Photo & Video */
+.main-photo-video {
+    display: flex;
+    gap: 24px;
+}
+
+.main-photo-video .main-photo-video-item {
+    width: 50%;
+}
+
+.main-photo-video-item .thumb {
+    position: relative;
+    transition: all ease 0.5s;
+}
+
+.main-photo-video-item .thumb img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.thumb .thumb-top-content,
+.thumb .thumb-play-button {
+    position: absolute;
+}
+
+.thumb .thumb-top-content {
+    display: flex;
+    justify-content: space-between;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+.thumb .thumb-top-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.thumb .thumb-top-content span {
+    margin-top: 5px;
+    color: #afafaf;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.thumb .thumb-play-button {
+    opacity: 0;
+    left: calc(50% - 23px);
+    top: calc(50% - 23px);
+    text-align: center;
+    transition: all ease 0.3s;
+}
+
+.thumb .thumb-play-button a {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    background: #fff;
+    line-height: 47px;
+    border-radius: 50%;
+}
+
+.thumb .thumb-play-button i {
+    color: var(--primary-color);
+    transform: translateX(2px);
+}
+
+.main-photo-video-item .thumb:hover .thumb-play-button {
+    opacity: 1;
+}
+
+.thumb .thumb-down-content {
+    margin: 16px 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thumb-down-content h4 {
+    font-size: 20px;
+    color: #afafaf;
+    font-weight: 700;
+}
+
+.thumb-down-content span {
+    font-size: 15px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* List Photo & Video */
+.list-photo-video {
+    margin-top: 30px;
+    display: flex;
+    gap: 24px;
+}
+
+.list-photo-video .list-photo-video-item {
+    width: 33.33333333%;
+}
+
+.list-photo-video-item .thumb {
+    position: relative;
+}
+
+.list-photo-video-item .thumb img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.list-photo-video-item .thumb:hover .thumb-play-button {
+    opacity: 1;
+}
