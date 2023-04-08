@@ -1,0 +1,60 @@
+.top-categories{
+    margin-top: -100px;
+}
+.top-categories .tag-item{
+    display: flex;
+    gap: 25px;
+    
+}
+.top-categories .tag-item .item{
+    width: 240px;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.top-categories .tag-item .item .icon{
+    background-color: #f7f7f7;
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    position: relative;
+    line-height: 75px;
+    border-radius: 10px;
+}
+.top-categories .tag-item .item .icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.top-categories .tag-item .item h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.top-categories .tag-item .item span{
+    font-size: 15px;
+    color: #afafaf;
+    display: block;
+}
+.top-categories .tag-item .item .counter{
+    font-weight: 500;
+    display: inline-block;
+    justify-content: center;
+    width: 42px;
+    height: 33px;
+    margin-top: 10px;
+    color: var(--primary-color);
+    padding: 5px 8px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 6%);
+    border-radius: 10px 0 10px 0;
+}
+
+/* featured-contests */
+
+.featured-contests{
+    margin-top: 120px;
+}
