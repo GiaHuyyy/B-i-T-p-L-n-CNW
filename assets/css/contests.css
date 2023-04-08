@@ -3,7 +3,7 @@
 
 /* Banner */
 .banner {
-    background-image: url(/assets/img/contests-bg.jpg);
+    background-image: url(./assets/img/contests-bg.jpg);
     padding-top: 200px;
     padding-bottom: 130px;
 }
@@ -105,19 +105,6 @@ fieldset {
 
 .featured-heading {
     margin-bottom: 70px;
-    text-align: center;
-}
-
-.featured-heading h4 {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-.featured-heading h2 {
-    margin-top: 10px;
-    font-size: 30px;
-    font-weight: 700;
 }
 
 /* Main Photo & Video */
@@ -237,4 +224,9 @@ fieldset {
 
 .list-photo-video-item .thumb:hover .thumb-play-button {
     opacity: 1;
+}
+
+/* Current Contests */
+.contests-container {
+    margin-top: 120px;
 }
