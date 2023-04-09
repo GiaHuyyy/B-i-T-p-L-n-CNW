@@ -229,3 +229,26 @@ fieldset {
 .contests-container {
     margin-top: 120px;
 }
+
+/* List Contests */
+.contests-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 70px;
+}
+
+.contests-list-item {
+    width: 25%;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    
+    /* text-align: center; */
+}
+
+.body {
+    padding: 30px;
+}
+.contests-list-item .thumb {
+    width: 100%;
+}
+
