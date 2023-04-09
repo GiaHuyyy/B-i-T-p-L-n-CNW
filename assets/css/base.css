@@ -32,6 +32,7 @@ body {
     width: 855px;
 }
 
+/* Styles heading */
 .heading-content-h4 {
     font-size: 15px;
     text-transform: uppercase;
@@ -49,6 +50,45 @@ body {
 .header_text-highlight {
     color: var(--primary-color);
     font-style: normal;
+}
+
+/* Next pages */
+.contests-next-pages {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.contests-next-pages li {
+    margin: 0 7px;
+}
+
+.contests-next-pages li a {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    line-height: 46px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.contests-next-pages li:nth-child(3) a,
+.contests-next-pages li a:hover {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.contests-next-pages .pre-icon a,
+.contests-next-pages .next-icon a {
+    border: none;
+    line-height: 48px;
 }
 
 /* Header */
