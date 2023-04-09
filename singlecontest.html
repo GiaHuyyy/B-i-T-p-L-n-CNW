@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/css/singlecontest.css" />
     </head>
-    <body style="height: 4000px;">
+    <body style="height: 4000px">
         <div class="web">
             <!-- Header -->
             <header class="header">
@@ -41,7 +41,9 @@
                                 >
                                 <i class="fa-solid fa-angle-down"></i>
                                 <ul class="sub_menu">
-                                    <li><a href="./contests.html">CONTESTS</a></li>
+                                    <li>
+                                        <a href="./contests.html">CONTESTS</a>
+                                    </li>
                                     <li><a href="#!">SINGLE CONTEST</a></li>
                                 </ul>
                             </li>
@@ -68,8 +70,42 @@
                 </div>
             </header>
 
+            <!-- Banner -->
+            <div
+                class="banner"
+                style="background-image: url(./assets/img/contests-bg.jpg)"
+            >
+                <div class="header_text">
+                    <h1 class="header_text-heading">
+                        A Walk In The Nature <br />
+                        <em class="header_text-highlight">Contest</em>
+                    </h1>
+                    <p class="header_text-desc border-top-2px">
+                        Contest Deadline
+                    </p>
+                </div>
+                <div class="banner-count">
+                    <div class="banner-count-days">
+                        <div class="value" id="days">00</div>
+                        <span>Days</span>
+                    </div>
+                    <div class="banner-count-hours">
+                        <div class="value" id="hours">00</div>
+                        <span>Hours</span>
+                    </div>
+                    <div class="banner-count-minutes">
+                        <div class="value" id="minutes">00</div>
+                        <span>Minutes</span>
+                    </div>
+                    <div class="banner-count-seconds">
+                        <div class="value" id="seconds">00</div>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </div>
+
             <!-- Footer -->
-            <footer class="footer" style="margin-top: 500px;">
+            <footer class="footer" style="margin-top: 500px">
                 <div class="container">
                     <div class="footer_item">
                         <p>
@@ -91,5 +127,49 @@
                 </div>
             </footer>
         </div>
+        <script>
+            // Lấy ra các phần tử HTML tương ứng với các giá trị ngày, giờ, phút và giây
+            const daysElement = document.getElementById("days");
+            const hoursElement = document.getElementById("hours");
+            const minutesElement = document.getElementById("minutes");
+            const secondsElement = document.getElementById("seconds");
+
+            // Thiết lập thời gian đích mà bạn muốn đếm ngược
+            const countDownDate = new Date("April 30, 2024 00:00:00").getTime();
+
+            // Cập nhật đếm ngược mỗi giây
+            const x = setInterval(function () {
+                // Lấy thời gian hiện tại
+                const now = new Date().getTime();
+
+                // Tính thời gian còn lại giữa thời gian hiện tại và thời gian đếm ngược
+                const distance = countDownDate - now;
+
+                // Tính toán số ngày, giờ, phút và giây còn lại
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor(
+                    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                const minutes = Math.floor(
+                    (distance % (1000 * 60 * 60)) / (1000 * 60)
+                );
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Cập nhật giá trị HTML của các phần tử ngày, giờ, phút và giây
+                daysElement.innerHTML = days;
+                hoursElement.innerHTML = hours;
+                minutesElement.innerHTML = minutes;
+                secondsElement.innerHTML = seconds;
+
+                // Nếu đếm ngược đã kết thúc, dừng cập nhật
+                if (distance < 0) {
+                    clearInterval(x);
+                    daysElement.innerHTML = "0";
+                    hoursElement.innerHTML = "0";
+                    minutesElement.innerHTML = "0";
+                    secondsElement.innerHTML = "0";
+                }
+            }, 1000);
+        </script>
     </body>
 </html>

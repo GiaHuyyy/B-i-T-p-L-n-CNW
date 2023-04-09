@@ -1,0 +1,45 @@
+.web {
+}
+
+.banner {
+    padding-top: 200px;
+    padding-bottom: 130px;
+}
+
+.banner .header_text {
+    width: 1000px;
+}
+
+.banner .header_text-desc {
+    margin-top: 30px;
+    padding-top: 28px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.banner .banner-count {
+    width: 734px;
+    margin: 5px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-count-days,
+.banner-count-hours,
+.banner-count-minutes,
+.banner-count-seconds {
+    width: 20%;
+}
+
+.banner-count .value {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-count span {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+}
