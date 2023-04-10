@@ -40,6 +40,10 @@
     margin-top: 5px;
 }
 
+.portfolio{
+    padding: 80px 0px;
+    background-color: #f7f7f7;
+}
 .portfolio .main-content .row{
     display: flex;
     justify-content: space-around;
@@ -117,4 +121,54 @@
 .portfolio .main-content .row .hover-effect .content .icons .box-icon a:hover{
     background-color: #00bdfe;
     color: #fff;
+}
+.main-button{
+    text-align: center;
+    margin-top: 30px;
+}
+.main-button a{
+    font-size: 15px;
+    color: #fff;
+    background-color: #00bdfe;
+    border: 1px solid #00bdfe;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    text-decoration: none !important;
+}
+.contract-us{
+    margin-bottom: 120px;
+    
+}
+.contract-us .main-content .section-heading{
+    margin-top: 120px;
+    margin-bottom: 70px;
+}
+.contract-us .main-content .row{
+    display: flex;
+    justify-content: space-between;
+}
+.contract-us .main-content .item{
+    width: 416px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.contract-us .main-content .item i{
+    font-size: 32px;
+    background-color: #00bdfe;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    margin-bottom: 25px;
 }
