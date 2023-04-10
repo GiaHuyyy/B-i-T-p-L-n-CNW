@@ -1,0 +1,41 @@
+.infor-user{
+    text-align: center;
+    margin-top: -80px;
+}
+.infor-user .main-content{
+
+}
+.infor-user .main-content .avartar{
+    
+}
+.infor-user .main-content .avartar img{
+    max-width: 170px;
+    border-radius: 50%;
+    border: 1px solid #afafaf;
+}
+.font-user-h4{
+    font-size: 30px;
+    font-weight: 700;
+}
+.infor-user .main-content .avartar h4{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.infor-user .main-content .row{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.infor-user .main-content .row .infor{
+    padding: 35px 50px;
+    border-radius: 15px;
+    border: 1px solid #afafaf;
+    margin-bottom: 120px;
+}
+.infor-user .main-content .row .infor span{
+    font-size: 15px;
+    color: #afafaf;
+    display: block;
+    margin-top: 5px;
+}
