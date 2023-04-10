@@ -74,9 +74,17 @@
     width: 50%;
     position: relative;
 }
+
+
 .featured-contests .row .item .thumb .hover-effect{
     position: absolute;
+    /* left: -300%; */
+    right: 0px;
     bottom: 15px;
+}
+.featured-contests .row .item .thumb:hover .featured-contests .row .item .thumb .hover-effect {
+    bottom: 15px;
+    right: 15px;
 }
 .featured-contests .row .item .thumb .hover-effect .content{
     width: 255px;
