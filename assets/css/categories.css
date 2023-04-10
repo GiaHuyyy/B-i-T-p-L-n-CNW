@@ -1,12 +1,11 @@
-.top-categories{
+.top-categories {
     margin-top: -100px;
 }
-.top-categories .tag-item{
+.top-categories .tag-item {
     display: flex;
     gap: 25px;
-    
 }
-.top-categories .tag-item .item{
+.top-categories .tag-item .item {
     width: 240px;
     background-color: white;
     padding: 30px;
@@ -14,7 +13,7 @@
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
-.top-categories .tag-item .item .icon{
+.top-categories .tag-item .item .icon {
     background-color: #f7f7f7;
     width: 75px;
     height: 75px;
@@ -23,24 +22,24 @@
     line-height: 75px;
     border-radius: 10px;
 }
-.top-categories .tag-item .item .icon img{
+.top-categories .tag-item .item .icon img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.top-categories .tag-item .item h4{
+.top-categories .tag-item .item h4 {
     font-size: 20px;
     font-weight: 700;
     margin-top: 15px;
     margin-bottom: 10px;
 }
-.top-categories .tag-item .item span{
+.top-categories .tag-item .item span {
     font-size: 15px;
     color: #afafaf;
     display: block;
 }
-.top-categories .tag-item .item .counter{
+.top-categories .tag-item .item .counter {
     font-weight: 500;
     display: inline-block;
     justify-content: center;
@@ -54,95 +53,111 @@
 }
 
 /* featured-contests */
-.featured-contests{
+.featured-contests {
     margin-top: 120px;
     margin-bottom: 120px;
 }
-.featured-contests .section-heading{
+.featured-contests .section-heading {
     margin-bottom: 60px;
 }
-.featured-contests .row .item{
+.featured-contests .row .item {
     padding-bottom: 30px;
     display: flex;
     gap: 20px;
 }
-.featured-contests .row .item .thumb img{
+.featured-contests .row .item .thumb img {
     width: 100%;
     border-radius: 15px;
+    object-fit: cover;
+    height: 100%;
 }
-.featured-contests .row .item .thumb{
-    width: 50%;
+.featured-contests .row .item .thumb {
     position: relative;
+    width: 50%;
+    overflow: hidden;
 }
 
-
-.featured-contests .row .item .thumb .hover-effect{
+.featured-contests .row .item .thumb .hover-effect {
     position: absolute;
-    /* left: -300%; */
-    right: 0px;
+    right: -100%;
     bottom: 15px;
+    transition: all 0.5s;
 }
-.featured-contests .row .item .thumb:hover .featured-contests .row .item .thumb .hover-effect {
+.featured-contests .row .item .thumb:hover .hover-effect {
     bottom: 15px;
     right: 15px;
 }
-.featured-contests .row .item .thumb .hover-effect .content{
+
+.featured-contests .row .item .thumb .hover-effect .content {
     width: 255px;
     height: 277px;
     background-color: #fff;
     padding: 25px 20px;
     border-radius: 15px;
 }
-.featured-contests .row .item .thumb .hover-effect .content .award{
+.featured-contests .row .item .thumb .hover-effect .content .award {
     font-size: 15px;
     color: #fff;
     background-color: #00bdfe;
     border-radius: 10px;
     padding: 8px 12px;
 }
-.featured-contests .row .item .thumb .hover-effect .content .price{
+.featured-contests .row .item .thumb .hover-effect .content .price {
     float: right;
     font-size: 20px;
     font-weight: 700;
     color: #00bdfe;
 }
-.featured-contests .row .item .thumb .hover-effect .content h4{
+.featured-contests .row .item .thumb .hover-effect .content h4 {
     font-size: 18px;
     font-weight: 700;
     margin-top: 25px;
     margin-bottom: 20px;
 }
-.featured-contests .row .item .thumb .hover-effect .content .infor{
+.featured-contests .row .item .thumb .hover-effect .content .infor {
     display: flex;
     justify-content: space-between;
-
 }
-.featured-contests .row .item .thumb .hover-effect .content .infor .participants{
+.featured-contests
+    .row
+    .item
+    .thumb
+    .hover-effect
+    .content
+    .infor
+    .participants {
     font-size: 13px;
     font-weight: 500;
     color: #afafaf;
     line-height: 20px;
 }
-.featured-contests .row .item .thumb .hover-effect .content .infor .submittions{
+.featured-contests
+    .row
+    .item
+    .thumb
+    .hover-effect
+    .content
+    .infor
+    .submittions {
     font-size: 13px;
     font-weight: 500;
     color: #afafaf;
     text-align: right;
     line-height: 20px;
 }
-.featured-contests .row .item .thumb .hover-effect .content .infor img{
+.featured-contests .row .item .thumb .hover-effect .content .infor img {
     width: 24px;
     height: 23px;
     border-radius: 0px;
     margin-bottom: 8px;
 }
-.featured-contests .row .item .thumb .hover-effect .content .Browse-button{
+.featured-contests .row .item .thumb .hover-effect .content .Browse-button {
     width: 100%;
     text-align: center;
     padding: 10px 18px;
     margin-top: 20px;
 }
-.Browse-button{
+.Browse-button {
     font-size: 15px;
     color: #00bdfe;
     background-color: transparent;
@@ -153,30 +168,29 @@
     font-weight: 500;
     text-transform: capitalize;
     letter-spacing: 0.5px;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
-
-.testimonials{
+.testimonials {
     padding: 120px 0px;
     background-color: #f1fbff;
 }
-.testimonials .main-content .item{
+.testimonials .main-content .item {
     display: flex;
     margin: 70px 232px 0 232px;
     border: 1px solid #e0e0e0;
     padding: 60px 60px 100px 60px;
     border-radius: 15px;
 }
-.testimonials .main-content .item .left-content{
+.testimonials .main-content .item .left-content {
     margin-right: 45px;
 }
-.testimonials .main-content .item .left-content p{
+.testimonials .main-content .item .left-content p {
     font-size: 20px;
     font-weight: 600;
     color: #afafaf;
 }
-.testimonials .main-content .item .left-content h4{
+.testimonials .main-content .item .left-content h4 {
     display: inline-block;
     margin-top: 25px;
     padding-top: 25px;
@@ -185,24 +199,24 @@
     font-weight: 700;
     margin-bottom: 5px;
 }
-.testimonials .main-content .item .left-content span{
+.testimonials .main-content .item .left-content span {
     display: block;
     font-size: 15px;
     color: #afafaf;
 }
-.testimonials .main-content .item .right-content img{
+.testimonials .main-content .item .right-content img {
     border-radius: 10px;
 }
-.clients{
+.clients {
     margin-top: 74px;
 }
-.clients .main-content .row{
+.clients .main-content .row {
     gap: 20px;
 }
-.clients .main-content .row img{
+.clients .main-content .row img {
     width: 196px;
     height: 120px;
 }
-.footer{
+.footer {
     margin-top: 0px;
 }
