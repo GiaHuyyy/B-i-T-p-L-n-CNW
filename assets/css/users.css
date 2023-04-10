@@ -1,67 +1,65 @@
-.infor-user{
+.infor-user {
     text-align: center;
     margin-top: -80px;
 }
-.infor-user .main-content{
-
+.infor-user .main-content {
 }
-.infor-user .main-content .avartar{
-    
+.infor-user .main-content .avartar {
 }
-.infor-user .main-content .avartar img{
+.infor-user .main-content .avartar img {
     max-width: 170px;
     border-radius: 50%;
     border: 1px solid #afafaf;
 }
-.font-user-h4{
+.font-user-h4 {
     font-size: 30px;
     font-weight: 700;
 }
-.infor-user .main-content .avartar h4{
+.infor-user .main-content .avartar h4 {
     font-size: 30px;
     font-weight: 700;
     margin-top: 30px;
 }
-.infor-user .main-content .row{
+.infor-user .main-content .row {
     display: flex;
     margin-top: 30px;
     justify-content: space-around;
 }
-.infor-user .main-content .row .infor{
+.infor-user .main-content .row .infor {
     padding: 35px 50px;
     border-radius: 15px;
     border: 1px solid #afafaf;
     margin-bottom: 120px;
 }
-.infor-user .main-content .row .infor span{
+.infor-user .main-content .row .infor span {
     font-size: 15px;
     color: #afafaf;
     display: block;
     margin-top: 5px;
 }
 
-.portfolio{
+.portfolio {
     padding: 80px 0px;
     background-color: #f7f7f7;
 }
-.portfolio .main-content .row{
+.portfolio .main-content .row {
     display: flex;
     justify-content: space-around;
     padding-left: 50px;
     padding-right: 50px;
 }
-.portfolio .main-content .row .thumb{
+.portfolio .main-content .row .thumb {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
     margin-bottom: 30px;
 }
-.portfolio .main-content .row .thumb img{
+.portfolio .main-content .row .thumb img {
     width: 100%;
     overflow: hidden;
 }
 
-.portfolio .main-content .row .hover-effect{
+.portfolio .main-content .row .hover-effect {
     position: absolute;
     left: 0;
     top: 0;
@@ -70,32 +68,32 @@
     background-color: rgba(42, 42, 42, 0.9);
     opacity: 0;
     visibility: hidden;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 .portfolio .thumb:hover .hover-effect {
     opacity: 1;
     visibility: visible;
-  }
-.portfolio .main-content .row .hover-effect .content{
+}
+.portfolio .main-content .row .hover-effect .content {
     color: white;
     text-align: center;
     padding: 30px;
     display: inline-block;
     width: 100%;
 }
-.portfolio .main-content .row .hover-effect .content h4{
+.portfolio .main-content .row .hover-effect .content h4 {
     margin-bottom: 10px;
 }
-.portfolio .main-content .row .hover-effect .content span{
+.portfolio .main-content .row .hover-effect .content span {
     font-size: 15px;
     color: #fff;
     margin: 10px;
 }
-.portfolio .main-content .row .hover-effect .content span em{
+.portfolio .main-content .row .hover-effect .content span em {
     font-style: normal;
     font-weight: 700;
 }
-.portfolio .main-content .row .hover-effect .content .icons{
+.portfolio .main-content .row .hover-effect .content .icons {
     display: flex;
     position: absolute;
     bottom: 30px;
@@ -103,10 +101,10 @@
     transform: translateX(-50%);
     text-align: center;
 }
-.portfolio .main-content .row .hover-effect .content .icons .box-icon{
+.portfolio .main-content .row .hover-effect .content .icons .box-icon {
     margin: 10px;
 }
-.portfolio .main-content .row .hover-effect .content .icons .box-icon a{
+.portfolio .main-content .row .hover-effect .content .icons .box-icon a {
     width: 46px;
     height: 46px;
     display: inline-block;
@@ -118,15 +116,15 @@
     font-size: 15px;
     text-decoration: none !important;
 }
-.portfolio .main-content .row .hover-effect .content .icons .box-icon a:hover{
+.portfolio .main-content .row .hover-effect .content .icons .box-icon a:hover {
     background-color: #00bdfe;
     color: #fff;
 }
-.main-button{
+.main-button {
     text-align: center;
     margin-top: 30px;
 }
-.main-button a{
+.main-button a {
     font-size: 15px;
     color: #fff;
     background-color: #00bdfe;
@@ -137,22 +135,21 @@
     font-weight: 500;
     text-transform: capitalize;
     letter-spacing: 0.5px;
-    transition: all .3s;
+    transition: all 0.3s;
     text-decoration: none !important;
 }
-.contract-us{
+.contract-us {
     margin-bottom: 120px;
-    
 }
-.contract-us .main-content .section-heading{
+.contract-us .main-content .section-heading {
     margin-top: 120px;
     margin-bottom: 70px;
 }
-.contract-us .main-content .row{
+.contract-us .main-content .row {
     display: flex;
     justify-content: space-between;
 }
-.contract-us .main-content .item{
+.contract-us .main-content .item {
     width: 416px;
     text-align: center;
     padding: 30px;
@@ -160,7 +157,7 @@
     background-color: #fff;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
-.contract-us .main-content .item i{
+.contract-us .main-content .item i {
     font-size: 32px;
     background-color: #00bdfe;
     color: #fff;
