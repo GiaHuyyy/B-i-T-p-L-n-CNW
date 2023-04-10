@@ -217,3 +217,61 @@
     background: #fff;
     color: var(--primary-color);
 }
+
+/* Contest Waiting */
+.contest-waiting {
+    margin-top: 120px;
+}
+
+.contest-waiting h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contest-waiting-list {
+    margin-top: 35px;
+    display: flex;
+    gap: 24px;
+}
+
+.contest-waiting-item {
+    width: 25%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contest-waiting-item .thumb {
+    width: calc(100% + 2px);
+    object-fit: cover;
+    display: block; /* -> Loại bỏ khoảng thừa dưới chân của thẻ inline, inline-block */
+    margin-left: -1px;
+}
+
+.contest-waiting-item-info {
+    padding: 25px;
+    background: #f7f7f7;
+}
+
+.contest-waiting-item-info h4 {
+    font-size: 15px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.contest-waiting-item-info p {
+    margin: 22px 0 20px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #7a7a7a;
+}
+
+.contest-waiting-item .price,
+.contest-waiting-item .deadline {
+    font-size: 15px;
+    font-weight: 500;
+    color: #afafaf;
+}
+
+.contest-waiting-item .deadline {
+    float: right;
+}
