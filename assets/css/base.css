@@ -286,9 +286,9 @@ body {
 /* Modal */
 .modal {
     position: fixed;
+    display: none;
     inset: 0;
     z-index: 10;
-    display: block;
     animation: fadeIn 0.3s;
 }
 
@@ -352,7 +352,7 @@ body {
 /* Auth Form Social */
 .auth-form__social-fb,
 .auth-form__social-gg {
-    display: none;
+    display: block;
     padding: 10px;
     background: #f4f4f2;
     text-decoration: none;
@@ -427,10 +427,6 @@ body {
 /* Auth Form Login  &  Auth Form Sign up */
 .auth-form__user__login,
 .auth-form__user__sign__up {
-    display: block;
-}
-
-.auth-form__user__login {
     display: none;
 }
 
