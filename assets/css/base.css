@@ -430,6 +430,10 @@ body {
     display: block;
 }
 
+.auth-form__user__login {
+    display: none;
+}
+
 .auth-form__user__login label,
 .auth-form__user__sign__up label {
     display: block;
