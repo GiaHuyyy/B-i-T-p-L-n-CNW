@@ -352,7 +352,7 @@ body {
 /* Auth Form Social */
 .auth-form__social-fb,
 .auth-form__social-gg {
-    display: block;
+    display: none;
     padding: 10px;
     background: #f4f4f2;
     text-decoration: none;
@@ -422,4 +422,73 @@ body {
 .auth-form__btn-register {
     width: 45%;
     margin-left: 5%;
+}
+
+/* Auth Form Login  &  Auth Form Sign up */
+.auth-form__user__login,
+.auth-form__user__sign__up {
+    display: block;
+}
+
+.auth-form__user__login label,
+.auth-form__user__sign__up label {
+    display: block;
+    color: #afafaf;
+    margin-bottom: 5px;
+    line-height: 24px;
+}
+
+.auth-form__user__login input,
+.auth-form__user__sign__up input {
+    display: block;
+    width: 90%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    color: #666;
+}
+
+.auth-form__user__sign__up input {
+    width: 100%;
+}
+
+.auth-form__user__login .password,
+.auth-form__user__sign__up .password,
+.auth-form__user__sign__up .address {
+    margin-top: 24px;
+}
+
+.auth-form__checkbox {
+    display: flex;
+    align-items: center;
+    margin: 23px 0 15px;
+}
+
+.auth-form__checkbox input {
+    margin-right: 8px;
+    width: 22px;
+    height: 22px;
+}
+
+.auth-form__checkbox label {
+    margin: 1px 0 0;
+}
+
+.auth-form__user__login .auth-form__btn-register {
+    width: 28%;
+}
+
+.auth-form__user__login .forgot__password {
+    display: block;
+    margin: 20px 0 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.auth-form__user__login .forgot__password:hover {
+    color: #0a58ca;
+}
+
+.auth-form__user__sign__up .auth-form__btn-register {
+    width: 34.5%;
 }
