@@ -282,3 +282,144 @@ body {
 .footer_item a:hover {
     color: #0a58ca;
 }
+
+/* Modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    display: block;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-color: #000;
+    /* display: none; */
+    z-index: 100;
+}
+
+.auth-form {
+    width: 330px;
+    background: #fff;
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.auth-form__header {
+    position: relative;
+    padding: 10px 20px;
+    background: #f4f4f2;
+    border-bottom: 1px solid #ddd;
+}
+
+.auth-form__heading {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.auth-form__header__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 15px;
+    line-height: 24px;
+    color: #fff;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+.auth-form__body {
+    padding: 20px;
+}
+
+/* Auth Form Social */
+.auth-form__social-fb,
+.auth-form__social-gg {
+    display: block;
+    padding: 10px;
+    background: #f4f4f2;
+    text-decoration: none;
+    clear: both;
+}
+
+.auth-form__social-fb:hover,
+.auth-form__social-gg:hover {
+    background: #e4e4e2;
+}
+
+.auth-form__social-icon {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 6px;
+    line-height: 24px;
+    color: #fff;
+    background: #3b5998;
+}
+
+.auth-form__social-title {
+    font-size: 16px;
+    color: #777;
+    font-weight: bold;
+}
+
+.auth-form__social-gg {
+    margin-top: 10px;
+}
+
+.auth-form__social-gg .auth-form__social-icon {
+    background: #dd4b39;
+}
+
+.auth-form__social-text {
+    display: block;
+    color: #afafaf;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.auth-form__btns {
+    display: flex;
+    text-align: center;
+}
+
+.auth-form__btn-login,
+.auth-form__btn-register {
+    width: 50%;
+    padding: 10px 20px;
+    border-radius: 4px;
+    line-height: 26px;
+    color: #fff;
+    background: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.auth-form__btn-login:hover,
+.auth-form__btn-register:hover {
+    background: #e4e4e2;
+}
+
+.auth-form__btn-register {
+    width: 45%;
+    margin-left: 5%;
+}
