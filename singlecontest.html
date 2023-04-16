@@ -62,8 +62,8 @@
                                 >
                             </li>
                         </ul>
-                        <div class="sign_in_up_button">
-                            <a href="" class="sign_in_up_button_link">
+                        <div id="sign__in-click" class="sign_in_up_button">
+                            <a href="#!" class="sign_in_up_button_link">
                                 <i class="fa-solid fa-user"></i>
                                 Sign In/Up
                             </a>
@@ -365,7 +365,186 @@
                     </div>
                 </div>
             </footer>
+
+            <!-- modal -->
+            <div id="modal__login" class="modal">
+                <div class="modal__overlay"></div>
+                <div class="modal__body">
+                    <div class="auth-form">
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 id="form-title" class="auth-form__heading">
+                                    Login
+                                </h3>
+                                <span class="auth-form__header__close"
+                                    ><i class="fa-solid fa-xmark"></i
+                                ></span>
+                            </div>
+                            <div class="auth-form__body">
+                                <!-- Social Login -->
+                                <div
+                                    class="auth-form__social__login"
+                                    id="form-1"
+                                >
+                                    <!-- FaceBook -->
+                                    <a href="#!" class="auth-form__social-fb">
+                                        <span class="auth-form__social-icon">
+                                            <i class="fa-brands fa-facebook">
+                                            </i>
+                                        </span>
+                                        <span class="auth-form__social-title">
+                                            Connect with Facebook
+                                        </span>
+                                    </a>
+                                    <!-- Google -->
+                                    <a href="#!" class="auth-form__social-gg">
+                                        <span class="auth-form__social-icon">
+                                            <i class="fa-brands fa-google-plus">
+                                            </i>
+                                        </span>
+                                        <span class="auth-form__social-title">
+                                            Connect with Google
+                                        </span>
+                                    </a>
+                                    <!-- Text -->
+                                    <span class="auth-form__social-text">
+                                        Or use your Email address
+                                    </span>
+                                    <!-- Button -->
+                                    <div class="auth-form__btns">
+                                        <a
+                                            href="#!"
+                                            id="login-btn"
+                                            class="auth-form__btn-login"
+                                        >
+                                            Login
+                                        </a>
+                                        <a
+                                            href="#!"
+                                            id="register-btn"
+                                            class="auth-form__btn-register"
+                                            onclick="changeTitleNew()"
+                                            >Sign up
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- User Login -->
+                                <div class="auth-form__user__login" id="form-2">
+                                    <form action="">
+                                        <label for="" class="username"
+                                            >Email / Username</label
+                                        >
+                                        <input
+                                            type="text"
+                                            name="Username"
+                                            id="Username"
+                                        />
+                                        <label for="" class="password"
+                                            >Password</label
+                                        >
+                                        <input
+                                            type="password"
+                                            name="password"
+                                            id="password"
+                                        />
+                                        <div class="auth-form__checkbox">
+                                            <input type="checkbox" />
+                                            <label for=""
+                                                >Remember me on this computer
+                                            </label>
+                                        </div>
+                                        <!-- Button -->
+                                        <div class="auth-form__btns">
+                                            <a
+                                                href="#!"
+                                                id="back-btn-login"
+                                                class="auth-form__btn-login"
+                                            >
+                                                <i
+                                                    class="fa-solid fa-angles-left"
+                                                >
+                                                </i>
+                                                Back
+                                            </a>
+                                            <a
+                                                href="#!"
+                                                class="auth-form__btn-register"
+                                            >
+                                                Login
+                                            </a>
+                                        </div>
+                                    </form>
+                                    <a href="#!" class="forgot__password"
+                                        >Forgot password?</a
+                                    >
+                                </div>
+                                <!-- User Sign Up -->
+                                <div
+                                    class="auth-form__user__sign__up"
+                                    id="form-3"
+                                >
+                                    <form action="">
+                                        <label for="" class="username"
+                                            >Username</label
+                                        >
+                                        <input
+                                            type="text"
+                                            name="Username"
+                                            id="Username"
+                                        />
+                                        <label for="" class="address"
+                                            >Email Address</label
+                                        >
+                                        <input
+                                            type="password"
+                                            name="password"
+                                            id="password"
+                                        />
+                                        <label for="" class="password"
+                                            >Password</label
+                                        >
+                                        <input
+                                            type="password"
+                                            name="password"
+                                            id="password"
+                                        />
+                                        <div class="auth-form__checkbox">
+                                            <input type="checkbox" />
+                                            <label for=""
+                                                >Send me occasional email
+                                                updates
+                                            </label>
+                                        </div>
+                                        <!-- Button -->
+                                        <div class="auth-form__btns">
+                                            <a
+                                                href="#!"
+                                                id="back-btn-register"
+                                                class="auth-form__btn-login"
+                                                onclick="changeTitleOld()"
+                                            >
+                                                <i
+                                                    class="fa-solid fa-angles-left"
+                                                >
+                                                </i>
+                                                Back
+                                            </a>
+                                            <a
+                                                href="#!"
+                                                class="auth-form__btn-register"
+                                            >
+                                                Register
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <script src="./assets/js/event_modal.js"></script>
         <script>
             // Lấy ra các phần tử HTML tương ứng với các giá trị ngày, giờ, phút và giây
             const daysElement = document.getElementById("days");
