@@ -211,7 +211,8 @@
     margin-top: 74px;
 }
 .clients .main-content .row {
-    gap: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 .clients .main-content .row img {
     width: 196px;
